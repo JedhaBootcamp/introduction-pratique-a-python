@@ -181,6 +181,7 @@ if nb_de_chances > 0:
 
 if nb_de_chances >0:
     question3 = input("Qui a fondé SpaceX")
+    question3 = question3.lower()
     while question3 != "elon musk":
         if nb_de_chances == 0:
             print("Oh non ! Tu as perdu le jeu...")
@@ -192,14 +193,53 @@ if nb_de_chances >0:
             question3 = question3.lower()
     if question3 == "elon musk":
         print("Bravo ! Tu as gagné le quiz !")
-
-    Question3 = input("Qui a fondé SpaceX")
-    nb_de_chances -=1
-
-if nb_de_chances == 0:
-    print("Oh non ! Tu as perdu")
-
-if question3 == "Elon Musk":
-    print("Bravo ! Tu as gagné le quiz !")
 ```
 ## Pour aller plus loin : Les fonctions
+
+Lorsque l'on code, on essaie de respecter le plus possible le principe DRY : Don't Repeat Yourself. Le but est de ne jamais écrire deux fois le même code. Dans notre quiz plus haut, on peut voir que nous nous répétons souvent.
+
+Un bon moyen de contracarer cela est de créer des *fonctions*. Une fonction est un bout de code que vous pouvez réutiliser à souhait dans votre script. Voici la structure générale
+
+```
+def nom_de_fonction(paramètre1, paramètre2,...,paramètreN):
+  Votre code
+```
+
+Appliquons le donc pour notre quiz :
+
+```Python
+def question(question, reponse, chances):
+    q = input(question)
+    while q != reponse:
+        if chances == 0:
+            print("Oh non ! Tu as perdu le jeu...")
+            break
+        else:
+            chances -= 1
+            print("Dommage ! Il te reste {} chances".format(chances))
+            q = input(question)
+
+    else:
+        print("Bonne réponse !")
+        chances_restantes = chances
+        return chances_restantes
+
+
+print("Voici notre quiz, tu as trois chances !")
+nb_de_chances = question("Quelle est la couleur du cheval blanc d'Henry IV ?", "blanc", 3)
+
+if nb_de_chances > 0:
+    nb_de_chances = question("Quand a été fondé Apple", "1976", nb_de_chances)
+
+if nb_de_chances > 0:
+    print("Bravo tu as gagné le jeu !")
+```
+
+L'avantage ici, c'est que vous pouvez ajouter autant de questions que vous le souhaitez sans avoir à ajouter un paquet de code en plus !
+
+
+## Conclusion
+
+Ceci conclue donc notre workshop sur Python, n'hésitez pas à demander notre livre d'introduction à Python complet pour que vous puissiez reprendre les exercices et continuer de pratiquer. N'oubliez pas, c'est la pratique qui fera de vous un bon codeur !
+
+Si vous êtes intéressé à l'idée d'apprendre les Data Sciences, regardez notre Bootcamp : [Jedha.co](https://jedha.co)
