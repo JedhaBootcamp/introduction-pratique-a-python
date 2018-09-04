@@ -1,6 +1,6 @@
 # Introduction Pratique à Python
 
-Bienvenu dans cette introduction pratique à Python. Dans ce workshop, nous allons apprendre ce qu'est éditeur de texte, une console et apprendre des concepts fondamentaux lié au langage Python à travers une application simple mais rigolote : un quizz !
+Bienvenu dans cette introduction pratique à Python. Dans ce workshop, nous allons apprendre ce qu'est un éditeur de texte, une console et apprendre les concepts fondamentaux liés au langage Python. Tout ceci à travers une application simple mais rigolote : un quiz !
 
 ## Téléchargeons Python
 
@@ -17,7 +17,7 @@ Impatient de coder ? On a presque finit la préparation. Pour pouvoir coder, vou
 
 ### Un éditeur de texte
 
-Un éditeur de texte est l'endroit où vous allez mettre tout votre *script*. Vous avez différent type d'éditeurs de texte comme Sublime, Pycharm ou Notepad++. Si vous avez déjà un éditeur de prédilection, utilisez celui que vous aimez. Pour notre part, nous allons utiliser Atom.
+Un éditeur de texte est l'endroit où vous allez mettre tout votre *script*. Vous avez différent types d'éditeurs de texte comme Sublime, Pycharm ou Notepad++. Si vous avez déjà un éditeur de prédilection, utilisez celui que vous aimez. Pour notre part, nous allons utiliser Atom.
 
 Voici le lien pour télécharger l'éditeur :
 
@@ -26,7 +26,7 @@ Voici le lien pour télécharger l'éditeur :
 
 ### Une console
 
-Bonne nouvelle ! Votre console, vous l'avez déjà sur votre ordinateur donc vous n'avez rien d'autre à télécharger. Cependant, la console est souvent cachée dans votre ordinateur. Voyons comment y accéder en fonction des différents appareils
+Bonne nouvelle ! Votre console, vous l'avez déjà sur votre ordinateur donc vous n'avez rien d'autre à télécharger. Cependant, la console est souvent cachée dans votre ordinateur. Voyons comment y accéder en fonction des différents appareils :
 
 #### Sur Mac
 
@@ -36,7 +36,7 @@ Allez dans Applications > Utilitaire > Terminal
 
 Ouvrir l'explorateur Windows ou le raccourci Poste de Travail.
 
-Aller dans le répertoire c:\windows\system32
+Aller dans le répertoire `c:\windows\system32`
 
 Cliquer sur le fichier cmd.exe avec le bouton droit et choisir “Exécuter en tant qu'administrateur”
 
@@ -92,17 +92,16 @@ else:
 
 ```
 
-Voici le principe pour formuler une condition. Elle commence par un `if` suivi de la condition que vous souhaitez vérifier. Si la condition n'est pas vérifiée, il faut que votre programme sache quoi faire. D'où le `else`
+Voici le principe pour formuler une condition. Elle commence par un `if` suivi de la condition que vous souhaitez vérifier. Si la condition n'est pas vérifiée, il faut que votre programme sache quoi faire. C'est ici que le `else` entre en jeu. Il va vous permettre de dire ce que le programme doit faire si la condition n'est pas remplie.
 
 ATTENTION : l'indentation est hyper importante en Python. Si vous ne la respectez pas, le programme ne va pas fonctionner.
 
 
 ### Les boucles
 
-Maintenant qu'on sait vérifier la réponse à une question posée, il faudrait qu'on ne passe pas à la question d'après si la réponse donnée est fausse. On peut le faire grâce à une boucle.
+Maintenant que l'on sait vérifier la réponse à une question posée, il faudrait qu'on ne passe pas à la question d'après si la réponse donnée est fausse. On peut le faire grâce à une boucle.
 
 Il existe deux types de boucles
-
 
 #### FOR
 
@@ -125,7 +124,7 @@ Ici, nous comptons le nombre d'itérations grâce à la fonction `range()` qui p
 
 Ceci n'est pas la manière la plus élégante d'arriver à nos fins cependant. On peut voir un autre type de boucle qui devrait pouvoir nous aider
 
-NB : Nous avons utilisé la notation `break`qui permet de sortir d'une boucle même si les itérations ne sont pas finies. Ceci est assez utile bien que pas forcément une best practice que d'utiliser ceci.
+NB : Nous avons utilisé la notation `break` qui permet de sortir d'une boucle même si les itérations ne sont pas finies. Ceci est assez utile bien que pas forcément une best practice que d'utiliser ceci.
 
 ### While
 
