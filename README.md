@@ -43,6 +43,9 @@ Cliquer sur le fichier cmd.exe avec le bouton droit et choisir “Exécuter en t
 Dans la fenêtre qui s'ouvre, saisir un nom de compte et le mot de passe d'un administrateur.
 Cliquer sur OK
 
+
+Commande Windows : https://windows.developpez.com/cours/ligne-commande/?page=page_4
+
 #### A quoi cela sert ?
 
 La console est ce qui va vous permettre d'executer votre code. Alors que l'éditeur de texte vous permet simplement de l'écrire, la console est ce qui va interpréter votre code et sortir un résultat.
