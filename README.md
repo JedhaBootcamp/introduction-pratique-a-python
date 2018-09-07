@@ -44,7 +44,7 @@ Dans la fenêtre qui s'ouvre, saisir un nom de compte et le mot de passe d'un ad
 Cliquer sur OK
 
 
-Commande Windows : https://windows.developpez.com/cours/ligne-commande/?page=page_4
+[Commande Windows](https://windows.developpez.com/cours/ligne-commande/?page=page_4)
 
 #### A quoi cela sert ?
 
