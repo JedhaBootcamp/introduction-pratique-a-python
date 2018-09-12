@@ -28,6 +28,10 @@ Voici le lien pour télécharger l'éditeur :
 
 Bonne nouvelle ! Votre console, vous l'avez déjà sur votre ordinateur donc vous n'avez rien d'autre à télécharger. Cependant, la console est souvent cachée dans votre ordinateur. Voyons comment y accéder en fonction des différents appareils :
 
+#### A quoi cela sert ?
+
+La console est ce qui va vous permettre d'executer votre code. Alors que l'éditeur de texte vous permet simplement de l'écrire, la console est ce qui va interpréter votre code et sortir un résultat.
+
 #### Sur Mac
 
 Allez dans Applications > Utilitaire > Terminal
@@ -46,20 +50,55 @@ Cliquer sur OK
 
 [Commande Windows](https://windows.developpez.com/cours/ligne-commande/?page=page_4)
 
-#### A quoi cela sert ?
+#### Comment l'utiliser ?
 
-La console est ce qui va vous permettre d'executer votre code. Alors que l'éditeur de texte vous permet simplement de l'écrire, la console est ce qui va interpréter votre code et sortir un résultat.
+Une fois que vous avez ouvert votre console, vous devrez aller dans le dossier où vous allez mettre votre fichier script python. Pour ceci il vous faut connaître deux commandes principales :
 
-Si vous avez bien suivi toutes les étapes d'au dessus, vous devriez pouvoir taper dans votre console
+* Sur Mac :
 
-`python`
+```
+cd
+```
+et
+
+```
+ls
+```
+
+* Sur Windows :
+
+```
+cd
+```
+et
+
+```
+dir
+```
+
+
+Pour aller dans le dossier dans lequel va se trouver votre fichier python, vous pouvez taper sur votre console :
+
+```
+cd chemin_vers_votre_fichier
+```
+
+Ceci est la structure générale. Prenons un exemple, si nous voulons aller dans notre dossier Téléchargements, on écrirait :
+
+```
+cd Downloads
+```
+
+Une fois que vous serez dans le bon dossier, vous pouvez exécuter votre code en tapant dans votre console :
+
+`python nom_de_votre_fichier.py`
 
 Ceci devrait ouvrir votre console Python
 
 
 ## Hello World
 
-Tentons un premier programme
+Tentons un premier programme dans notre éditeur de texte.
 
 ```Python
 prenom = input("Quel est votre nom ? ")
