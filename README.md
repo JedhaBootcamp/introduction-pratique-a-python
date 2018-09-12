@@ -1,6 +1,12 @@
 # Introduction Pratique à Python
 
-Bienvenu dans cette introduction pratique à Python. Dans ce workshop, nous allons apprendre ce qu'est un éditeur de texte, une console et apprendre les concepts fondamentaux liés au langage Python. Tout ceci à travers une application simple mais rigolote : un quiz !
+Bienvenue dans cette introduction pratique à Python. Dans ce workshop, nous allons apprendre ce qu'est un éditeur de texte, une console et apprendre les concepts fondamentaux liés au langage Python. Tout ceci à travers une application simple mais rigolote : un quiz !
+
+
+Si préférez regarder la vidéo du workshop, n'hésitez pas à cliquer sur ce lien :
+
+[Vidéo Workshop](https://www.youtube.com/watch?v=UCQYUPgqrB8&t=183s)
+
 
 ## Téléchargeons Python
 
@@ -28,10 +34,6 @@ Voici le lien pour télécharger l'éditeur :
 
 Bonne nouvelle ! Votre console, vous l'avez déjà sur votre ordinateur donc vous n'avez rien d'autre à télécharger. Cependant, la console est souvent cachée dans votre ordinateur. Voyons comment y accéder en fonction des différents appareils :
 
-#### A quoi cela sert ?
-
-La console est ce qui va vous permettre d'executer votre code. Alors que l'éditeur de texte vous permet simplement de l'écrire, la console est ce qui va interpréter votre code et sortir un résultat.
-
 #### Sur Mac
 
 Allez dans Applications > Utilitaire > Terminal
@@ -47,8 +49,9 @@ Cliquer sur le fichier cmd.exe avec le bouton droit et choisir “Exécuter en t
 Dans la fenêtre qui s'ouvre, saisir un nom de compte et le mot de passe d'un administrateur.
 Cliquer sur OK
 
+#### A quoi cela sert ?
 
-[Commande Windows](https://windows.developpez.com/cours/ligne-commande/?page=page_4)
+La console est ce qui va vous permettre d'executer votre code. Alors que l'éditeur de texte vous permet simplement de l'écrire, la console est ce qui va interpréter votre code et sortir un résultat.
 
 #### Comment l'utiliser ?
 
@@ -93,8 +96,13 @@ Une fois que vous serez dans le bon dossier, vous pouvez exécuter votre code en
 
 `python nom_de_votre_fichier.py`
 
-Ceci devrait ouvrir votre console Python
 
+Par exemple, si nous avons un fichier nommé *hello_world.py*, on taperait pour l'exécuter :
+
+`python hello_world.py`
+
+
+Maintenant que l'on sait tout cela, écrivons un premier programme.
 
 ## Hello World
 
@@ -235,6 +243,7 @@ if nb_de_chances >0:
     if question3 == "elon musk":
         print("Bravo ! Tu as gagné le quiz !")
 ```
+
 ## Pour aller plus loin : Les fonctions
 
 Lorsque l'on code, on essaie de respecter le plus possible le principe DRY : Don't Repeat Yourself. Le but est de ne jamais écrire deux fois le même code. Dans notre quiz plus haut, on peut voir que nous nous répétons souvent.
